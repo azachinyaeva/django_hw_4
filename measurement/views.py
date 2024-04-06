@@ -1,7 +1,7 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
-from smart_home.measurement.models import Sensor, Measurement
-from smart_home.measurement.serializers import DetailsSerializer, SensorListSerializer, MeasurementSerializer
+from .models import Sensor, Measurement
+from .serializers import DetailsSerializer, SensorListSerializer, MeasurementSerializer
 
 
 class SensorView(ListAPIView):
